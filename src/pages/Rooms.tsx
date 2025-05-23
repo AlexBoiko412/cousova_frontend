@@ -1,8 +1,9 @@
 const Rooms = () => {
     return (
-        <div>
+        <>
+            <div className={"poster__background"}/>
             Rooms
-        </div>
+        </>
     );
 };
 

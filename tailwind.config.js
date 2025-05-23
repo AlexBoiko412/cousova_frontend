@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Adobe', 'sans-serif'], // або 'Roboto', якщо з Figma
+        sans: ['Montserrat', 'sans-serif'],
+        logo: ['Garamond', 'sans-serif'],
       },
       colors: {
         primary: "#14274A",

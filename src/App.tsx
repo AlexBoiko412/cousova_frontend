@@ -5,6 +5,7 @@ import Home from "./pages/Home.tsx";
 import Rooms from "./pages/Rooms.tsx";
 import RoomDetails from "./pages/RoomDetails.tsx";
 import BookingSuccess from "./pages/BookingSuccess.tsx";
+import About from "./pages/About.tsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/rooms/:id" element={<RoomDetails />} />
+            <Route path="/about" element={<About />} />
             <Route path="/booking-success" element={<BookingSuccess />} />
         </Routes>
     </BrowserRouter>

@@ -1,6 +1,7 @@
 import ScrollDownButton from "../components/UI/ScrollDownButton.tsx";
 
-const Home = () => {
+const About = () => {
+
     return (
         <>
             <div className={"poster__background"}/>
@@ -44,4 +45,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default About;

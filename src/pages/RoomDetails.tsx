@@ -4,9 +4,10 @@ const RoomDetails = () => {
     const { id } = useParams<{id: string}>();
 
     return (
-        <div>
+        <>
+            <div className={"poster__background"}/>
             Room: {id}
-        </div>
+        </>
     );
 };
 
