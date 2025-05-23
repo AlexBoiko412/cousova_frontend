@@ -1,0 +1,25 @@
+@import "_fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer utilities {
+  .navbar {
+    @apply w-full h-[10vh] p-2 flex justify-between items-center text-light px-[10vw];
+  }
+  .navbar__logo {
+    @apply h-[10vh] flex items-center justify-center bg-accent rounded-b-2xl p-5 text-primary;
+  }
+  .navbar__list {
+    @apply flex items-center justify-center gap-2;
+  }
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
