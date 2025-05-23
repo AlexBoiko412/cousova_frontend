@@ -13,7 +13,7 @@ export default {
         primary: "#14274A",
         secondary: "#18BC9C",
         accent: "#E0B973",
-        light: "#ECF0F1",
+        light: "#ffffff",
         dark: "#34495E",
       },
       fontSize: {
