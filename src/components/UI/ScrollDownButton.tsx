@@ -1,6 +1,10 @@
 import scroll from "../../assets/scroll-down.png"
 
-const ScrollDownButton = () => {
+interface IScrollDownButtonProps {
+    label: string
+}
+
+const ScrollDownButton = ({label}: IScrollDownButtonProps) => {
     const handleScroll = () => {
         window.scrollBy({
             top: window.innerHeight,
@@ -13,6 +17,7 @@ const ScrollDownButton = () => {
             onClick={handleScroll}
             className="scroll-down_button"
         >
+            <span>{label}</span>
             <img
                 alt={"Scroll"}
                 src={scroll}

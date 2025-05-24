@@ -6,6 +6,7 @@ import Rooms from "./pages/Rooms.tsx";
 import RoomDetails from "./pages/RoomDetails.tsx";
 import BookingSuccess from "./pages/BookingSuccess.tsx";
 import About from "./pages/About.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/booking-success" element={<BookingSuccess />} />
         </Routes>
+        <Footer/>
     </BrowserRouter>
   )
 }

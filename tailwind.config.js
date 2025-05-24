@@ -25,6 +25,9 @@ export default {
       boxShadow: {
         card: '0 4px 20px rgba(0, 0, 0, 0.1)',
       },
+      padding: {
+        "main-page-padding": "5vw"
+      }
     },
   },
   plugins: [],
