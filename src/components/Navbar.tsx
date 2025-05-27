@@ -14,8 +14,8 @@ const Navbar = () => {
                 className={"navbar__logo cursor-pointer"}
                 onClick={() => navigate("/")}
             >
-                <span className={"text-xl leading-4  tracking-wide"}>LUXURY</span>
-                <span className={"text-[6px] leading-none tracking-[0.5em]"}>HOTELS</span>
+                <span className={"text-3xl leading-6  tracking-wide"}>LUXURY</span>
+                <span className={"text-[12px] leading-none tracking-[0.5em]"}>HOTELS</span>
             </div>
             <ul className={"navbar__list"}>
                 <li><NavLink to={"/"} className={navLinkClasses}>Home</NavLink></li>

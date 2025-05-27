@@ -18,7 +18,7 @@
 
 
   .navbar__list {
-    @apply flex items-center justify-center gap-4 text-light text-xs ;
+    @apply flex items-center justify-center gap-4 text-light text-[1.5rem] ;
   }
   .active__link {
     @apply relative text-light after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[104%] after:h-[1px] after:bg-light after:rounded-full;
@@ -27,7 +27,7 @@
 
 
   .scroll-down_button {
-    @apply flex flex-col items-center justify-center w-6 gap-2 text-[0.8em];
+    @apply flex flex-col items-center justify-center w-6 gap-2 text-body;
   }
 
 
@@ -64,7 +64,7 @@
   }
 
   .footer {
-    @apply flex items-center justify-between px-main-page-padding py-[10vh] text-light text-[0.6em] font-medium bg-primary relative;
+    @apply flex items-center justify-between px-main-page-padding py-[10vh] text-light text-body font-medium bg-primary relative;
   }
 
   .footer::after {
@@ -96,7 +96,7 @@
 
 
   .button {
-    @apply flex items-center justify-center rounded-md gap-2 text-light bg-accent px-6 py-1 text-[0.6em] font-bold;
+    @apply flex items-center justify-center rounded-md gap-2 text-light bg-accent px-6 py-1 text-[5rem] font-bold;
     transition-duration: 0.2s;
   }
 
