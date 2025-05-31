@@ -1,0 +1,16 @@
+@tailwind utilities;
+
+@layer utilities {
+    .button {
+        @apply flex items-center justify-center rounded-md gap-2 text-light bg-accent px-6 py-1 text-button font-bold;
+        transition-duration: 0.2s;
+    }
+
+    .button:hover {
+        @apply bg-primary cursor-pointer;
+    }
+
+    .button:active {
+        @apply bg-black cursor-pointer;
+    }
+}

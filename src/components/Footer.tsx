@@ -1,10 +1,13 @@
 import facebook from "../assets/facebook.png"
 import twitter from "../assets/twitter.png"
 import instagram from "../assets/instagram.png"
+import EmailSubscribeInput from "./UI/EmailSubscribeInput.tsx";
+import classes from './Footer.module.css'
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
     return (
-        <section className={"footer"}>
+        <section className={classes.footer}>
             <div>
                 <div>
                     <span className={"text-xl leading-4  tracking-wide"}>LUXURY</span>
@@ -16,13 +19,13 @@ const Footer = () => {
                     luxury_hotels@gmail.com <br/>
                 </p>
             </div>
-            <ul className={"footer__list"}>
-                <h3>About Us</h3>
-                <h3>Contact</h3>
-                <h3>Terms & Conditions</h3>
+            <ul className={classes.footer__list}>
+                <li><NavLink to={"/rooms"}>Contact</NavLink></li>
+                <li><NavLink to={"/about"}>About Us</NavLink></li>
+                <li><NavLink to={"/"}>Terms & Conditions</NavLink></li>
             </ul>
 
-            <ul className={"footer__list"}>
+            <ul className={classes.footer__list}>
                 <h3 className={"flex w-full gap-2 items-center justify-between"}>
                     <img width={6} src={facebook} alt="facebook"/>
                     <a href="https://www.facebook.com">Facebook</a>
@@ -39,7 +42,7 @@ const Footer = () => {
 
             <div>
                 <h3>Subscribe to newsletter</h3>
-                <h3>Email</h3>
+                <EmailSubscribeInput/>
             </div>
         </section>
     );

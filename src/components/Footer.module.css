@@ -1,0 +1,36 @@
+@tailwind utilities;
+
+
+@layer utilities {
+    .footer {
+        @apply flex items-center justify-between px-main-page-padding py-[10vh] text-light text-body font-medium bg-primary relative;
+    }
+
+    .footer::after {
+        content: "";
+        width: 20vh;
+        height: 20vh;
+        position: absolute;
+        z-index: -1;
+        top: -2vh;
+        left: 50%;
+        transform: translateX(-32%) rotate(-58deg);
+        @apply bg-primary;
+    }
+
+    .footer::before {
+        content: "";
+        width: 20vh;
+        height: 20vh;
+        position: absolute;
+        z-index: -1;
+        top: -2vh;
+        left: 50%;
+        transform: translateX(-64%) rotate(-32deg);
+        @apply bg-primary;
+    }
+
+    .footer__list {
+        @apply flex flex-col items-start justify-center gap-2 text-light px-main-page-padding;
+    }
+}

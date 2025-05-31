@@ -1,0 +1,33 @@
+@tailwind utilities;
+
+
+@layer utilities {
+    .emailInput {
+        @apply border-2 border-accent rounded-sm bg-primary font-medium text-light text-body py-2 px-4 mr-2;
+    }
+
+    .emailInput:focus {
+        @apply outline-none;
+    }
+
+    .emailInputButton {
+        content: "OK";
+        @apply absolute right-0 top-0 h-full px-4 bg-accent text-primary flex items-center justify-center rounded-r-sm cursor-pointer;
+        top: 0;
+        right: 0;
+        display: flex;
+    }
+
+    .emailInputButton:hover {
+        @apply bg-dark text-light;
+    }
+    .emailInputButton:active {
+        @apply bg-primary text-light;
+    }
+
+    .emailInput::placeholder {
+        @apply text-light;
+    }
+
+
+}

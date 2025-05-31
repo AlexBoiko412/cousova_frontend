@@ -4,35 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
 
+section {
+  @apply px-main-page-padding
+}
 
 
 @layer utilities {
-  .navbar {
-    @apply w-full h-[10vh] p-2 flex justify-between items-center text-light px-main-page-padding fixed z-50;
-  }
-  .navbar__logo {
-    @apply h-[10vh] flex flex-col gap-0 items-center justify-center bg-accent rounded-b-2xl p-5 text-primary font-bold ;
-    font-family: 'Garamond', sans-serif;
-  }
-
-
-  .navbar__list {
-    @apply flex items-center justify-center gap-4 text-light text-[1.5rem] ;
-  }
-  .active__link {
-    @apply relative text-light after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[104%] after:h-[1px] after:bg-light after:rounded-full;
-  }
-
-
-
-  .scroll-down_button {
-    @apply flex flex-col items-center justify-center w-6 gap-2 text-body;
-  }
-
-
-
-
   .poster {
     @apply flex flex-col items-center justify-between text-light pt-[30vh] h-[100vh] pb-[2vw] ;
   }
@@ -59,61 +41,5 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .home {
-    @apply flex flex-col items-center justify-center gap-2 text-primary pt-[10vh];
-  }
-
-  .footer {
-    @apply flex items-center justify-between px-main-page-padding py-[10vh] text-light text-body font-medium bg-primary relative;
-  }
-
-  .footer::after {
-    content: "";
-    width: 20vh;
-    height: 20vh;
-    position: absolute;
-    z-index: -1;
-    top: -2vh;
-    left: 50%;
-    transform: translateX(-32%) rotate(-58deg);
-    @apply bg-primary;
-  }
-  .footer::before {
-    content: "";
-    width: 20vh;
-    height: 20vh;
-    position: absolute;
-    z-index: -1;
-    top: -2vh;
-    left: 50%;
-    transform: translateX(-64%) rotate(-32deg);
-    @apply bg-primary;
-  }
-
-  .footer__list {
-    @apply flex flex-col items-start justify-center gap-2 text-light px-main-page-padding;
-  }
-
-
-  .button {
-    @apply flex items-center justify-center rounded-md gap-2 text-light bg-accent px-6 py-1 text-[5rem] font-bold;
-    transition-duration: 0.2s;
-  }
-
-  .button:hover {
-      @apply bg-primary cursor-pointer;
-  }
-
-  .button:active {
-    @apply bg-black cursor-pointer;
-  }
 }
 
-a {
-  text-decoration: inherit;
-  color: inherit;
-}
-
-section {
-  @apply px-main-page-padding
-}

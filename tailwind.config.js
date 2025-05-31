@@ -21,6 +21,7 @@ export default {
         h1: ['2.5rem', { lineHeight: '3rem' }],
         h2: ['2rem', { lineHeight: '2.5rem' }],
         body: ['1rem', { lineHeight: '1.5rem' }],
+        button: ['1.5rem', { lineHeight: '2rem' }],
       },
       boxShadow: {
         card: '0 4px 20px rgba(0, 0, 0, 0.1)',

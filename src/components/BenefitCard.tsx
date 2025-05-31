@@ -17,8 +17,8 @@ const BenefitCard = ({
     return (
         <div className={classes.benefitCard}>
             <div className={"flex flex-col gap-2 items-start justify-center"}>
-                <h1 className={"text-2xl font-logo font-bold"}>{title}</h1>
-                <p className={"font-medium text-[0.8em]"}>
+                <h1 className={"text-4xl font-logo font-bold"}>{title}</h1>
+                <p className={"font-medium text-body"}>
                     {description}
                 </p>
 

@@ -1,4 +1,5 @@
 import scroll from "../../assets/scroll-down.png"
+import classes from "./ScrollDownButton.module.css"
 
 interface IScrollDownButtonProps {
     label: string
@@ -15,7 +16,7 @@ const ScrollDownButton = ({label}: IScrollDownButtonProps) => {
     return (
         <button
             onClick={handleScroll}
-            className="scroll-down_button"
+            className={classes.scrollDownButton}
         >
             <span>{label}</span>
             <img

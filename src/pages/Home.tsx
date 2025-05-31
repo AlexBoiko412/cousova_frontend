@@ -3,6 +3,7 @@ import Button from "../components/UI/Button.tsx";
 import bookIco from "../assets/book-icon.png"
 import BenefitCard from "../components/BenefitCard.tsx";
 import Testimonials from "../components/UI/Testimonials.tsx";
+import "./Home.css"
 
 // mock data
 const testimonials = [
@@ -41,7 +42,7 @@ const Home = () => {
 
                 <div className={"flex flex-col items-center gap-6"}>
                     <Button className={"!py-2 !px-4 !text-body"}>
-                        <img className={"w-[14px]"} src={bookIco} alt={"book icon"}/>
+                        <img className={"w-[20px]"} src={bookIco} alt={"book icon"}/>
                         BOOK NOW
                     </Button>
 

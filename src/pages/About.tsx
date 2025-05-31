@@ -31,6 +31,9 @@ const About = () => {
                 </div>
             </section>
 
+            <section className={"facilities"}>
+
+            </section>
         </>
     );
 };
