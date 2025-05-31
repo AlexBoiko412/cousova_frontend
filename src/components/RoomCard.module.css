@@ -1,0 +1,29 @@
+@tailwind utilities;
+
+
+@layer utilities {
+    .roomCard {
+        @apply bg-white rounded-lg shadow-md overflow-hidden;
+    }
+
+    .carousel {
+        @apply relative w-full overflow-hidden;
+    }
+
+    .carouselButton__right {
+        @apply absolute h-full w-[20%] flex justify-center items-center top-0 right-0 opacity-0 bg-primary/40 text-light/50 text-9xl transition-opacity;
+    }
+
+    .carouselButton__left {
+        @apply absolute h-full w-[20%] flex justify-center items-center top-0 left-0 opacity-0 bg-primary/40 text-light/50 text-9xl transition-opacity;
+    }
+
+    .carouselButton__right:hover, .carouselButton__left:hover {
+        opacity: 50;
+    }
+
+
+    .carouselCounter {
+        @apply absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2;
+    }
+}
