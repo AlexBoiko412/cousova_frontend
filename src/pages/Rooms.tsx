@@ -1,6 +1,9 @@
 import ScrollDownButton from "../components/UI/ScrollDownButton.tsx";
 import Button from "../components/UI/Button.tsx";
 import bookIco from "../assets/book-icon.png";
+import './Rooms.css'
+import Testimonials from "../components/UI/Testimonials.tsx";
+import testimonials from "./tesimonials.json";
 
 const Rooms = () => {
     return (
@@ -12,24 +15,37 @@ const Rooms = () => {
                 <div className={"flex flex-col justify-start w-full"}>
                     <h2 className={"text-lg leading-none"}>WELCOME TO</h2>
 
-                    <h1 className={"font-logo text-7xl tracking-widest leading-none font-bold"}>LUXURY</h1>
+                    <h1 className={"font-logo text-9xl tracking-widest leading-none font-bold"}>LUXURY</h1>
                     <h3 className={"font-logo text-xl font-bold tracking-[0.5em] leading-3"}>HOTELS</h3>
 
-                    <p className={"text-[0.8em] mt-5"}>
+                    <p className={"text-body mt-5"}>
                         Book your stay and enjoy Luxury
                         redefined at the most affordable rates.
                     </p>
                 </div>
 
                 <div className={"flex flex-col items-center gap-6"}>
-                    <Button className={"!py-2 !px-4 !text-[0.8em]"}>
-                        <img className={"w-[14px]"} src={bookIco} alt={"book icon"}/>
+                    <Button className={"!py-2 !px-4 !text-body"}>
+                        <img className={"w-[20px]"} src={bookIco} alt={"book icon"}/>
                         BOOK NOW
                     </Button>
 
-                    <ScrollDownButton label={"Rooms"}/>
+                    <ScrollDownButton label={""} />
+                </div>
+            </section>
+
+            <section className={"rooms"}>
+                <div>
+                    <h1 className={"page-content__title"}>ROOMS AND RATES</h1>
+                    <p className={"page-content__description"}>Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes,
+                        comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented
+                        by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces. </p>
                 </div>
 
+            </section>
+
+            <section className={"testimonials"}>
+                <Testimonials testimonials={testimonials}/>
             </section>
         </>
     );

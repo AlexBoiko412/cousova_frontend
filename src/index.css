@@ -41,5 +41,17 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  .page-content__title {
+    @apply text-primary text-5xl uppercase font-semibold font-logo text-center mb-6
+  }
+
+  .page-content__description {
+    @apply text-primary font-medium text-body text-center
+  }
+
+
+  .testimonials {
+    @apply flex items-center justify-between py-[8vh]
+  }
 }
 

@@ -1,0 +1,13 @@
+@tailwind utilities;
+
+@layer utilities {
+    .facilityCard {
+        @apply w-full h-screen relative;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .facilityCard__title {
+        @apply absolute bottom-0 left-[50%] -translate-x-[50%] flex items-center justify-center uppercase text-2xl text-primary bg-light px-14 py-2 font-bold;
+    }
+}

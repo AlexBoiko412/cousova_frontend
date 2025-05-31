@@ -28,6 +28,12 @@ export default {
       },
       padding: {
         "main-page-padding": "5vw"
+      },
+      dropShadow: {
+        'navLink-shadow': [
+            '0 1px 8px rgba(0, 0, 0, 1)',
+            '0 1px 8px rgba(0, 0, 0, 1)'
+        ]
       }
     },
   },

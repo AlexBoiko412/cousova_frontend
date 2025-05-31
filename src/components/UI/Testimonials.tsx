@@ -67,10 +67,10 @@ const Testimonials = ({ testimonials }: ITestimonialProps) => {
 
                 <div className="mt-2 flex justify-center gap-2 relative z-10">
                     <Button onClick={() => paginate(-1)} className="!px-2">
-                        <img width={10} src={arrow} alt="left" />
+                        <img width={14} src={arrow} alt="left" />
                     </Button>
                     <Button onClick={() => paginate(1)} className="!px-2">
-                        <img width={10} src={arrow} alt="right" className="rotate-180" />
+                        <img width={14} src={arrow} alt="right" className="rotate-180" />
                     </Button>
                 </div>
             </div>

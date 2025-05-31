@@ -6,20 +6,9 @@ import Testimonials from "../components/UI/Testimonials.tsx";
 import "./Home.css"
 
 // mock data
-const testimonials = [
-    {
-        name: "Emily Johnson",
-        comment: "The rooms were spotless and the view was stunning. Highly recommend this hotel!",
-    },
-    {
-        name: "James Smith",
-        comment: "Excellent service and beautiful surroundings. I’ll definitely come back again!",
-    },
-    {
-        name: "Sophie Lee",
-        comment: "A peaceful stay with great amenities. Everything was perfect!",
-    },
-];
+import testimonials from "./tesimonials.json";
+
+
 
 const Home = () => {
     return (

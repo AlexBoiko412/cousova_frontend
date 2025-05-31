@@ -1,3 +1,5 @@
+import classes from './Button.module.css'
+
 interface IButtonProps {
     children?: React.ReactNode;
     className?: string;
@@ -7,7 +9,7 @@ interface IButtonProps {
 const Button = ({children, className, ...props}: IButtonProps) => {
     return (
         <button
-            className={`button ${className}`}
+            className={`${classes.button} ${className}`}
             {...props}
         >
             {children}

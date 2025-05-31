@@ -11,8 +11,12 @@
 
 
     .navbar__list {
-        @apply flex items-center justify-center gap-4 text-light text-[1.5rem] ;
+        @apply flex items-center justify-center gap-8 text-light text-[1.5rem];
     }
+    .navbar__list li {
+        @apply  drop-shadow-navLink-shadow text-primary;
+    }
+
     .active__link {
         @apply relative text-light after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[104%] after:h-[1px] after:bg-light after:rounded-full;
     }
