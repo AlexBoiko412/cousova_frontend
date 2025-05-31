@@ -1,10 +1,12 @@
 import {NavLink, useNavigate} from "react-router-dom";
 import classes from "./Navbar.module.css"
+import {cn} from "../utils/cn.ts";
 
 const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
-    isActive
-        ? classes.active__link
-        : "relative text-light hover:text-gray-300";
+    cn(
+        "relative text-light hover:text-gray-300",
+        isActive && classes.active__link
+    );
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -12,7 +14,7 @@ const Navbar = () => {
     return (
         <div className={classes.navbar}>
             <div
-                className={classes.navbar__logo + " cursor-pointer"}
+                className={cn(classes.navbar__logo, " cursor-pointer")}
                 onClick={() => navigate("/")}
             >
                 <span className={"text-3xl leading-6  tracking-wide"}>LUXURY</span>
