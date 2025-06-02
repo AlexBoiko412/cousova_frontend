@@ -16,7 +16,7 @@ section {
 
 @layer utilities {
   .poster {
-    @apply flex flex-col items-center justify-between text-light pt-[30vh] h-[100vh] pb-[2vw] ;
+    @apply flex flex-col items-center justify-between text-light pt-[30vh] h-[100vh] pb-[2vw];
   }
   .poster__background {
     position: absolute;

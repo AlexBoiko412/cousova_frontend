@@ -34,7 +34,7 @@ const About = () => {
                         BOOK NOW
                     </Button>
 
-                    <ScrollDownButton label={""} />
+                    <ScrollDownButton label={"About"} />
                 </div>
             </section>
 

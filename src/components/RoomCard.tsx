@@ -1,6 +1,8 @@
 import { useState } from "react";
 import classes from './RoomCard.module.css'
 import {cn} from "../utils/cn.ts";
+import Button from "./UI/Button.tsx";
+import {Link} from "react-router-dom";
 
 interface RoomCardProps {
     images: string[];
@@ -17,11 +19,17 @@ const RoomCard = ({ images, name, description }: RoomCardProps) => {
     return (
         <div className={classes.roomCard}>
             <div className={cn(classes.carousel, "group")}>
-                <img
-                    src={images[index]}
-                    alt={`Room image ${index + 1}`}
-                    className="w-full h-full object-cover transition-opacity duration-300"
-                />
+                {images.map((src, i) => (
+                    <img
+                        key={i}
+                        src={src}
+                        alt={`Room image ${i + 1}`}
+                        className={cn(
+                            classes.carouselImage,
+                            i === index ? "opacity-100" : "opacity-0"
+                        )}
+                    />
+                ))}
 
                 <button
                     onClick={prev}
@@ -43,7 +51,7 @@ const RoomCard = ({ images, name, description }: RoomCardProps) => {
                             key={i}
                             onClick={() => setIndex(i)}
                             className={cn(
-                                "w-4 h-4 rounded-full cursor-pointer transition border-[1px]",
+                                classes.carouselCounter__dot,
                                 i === index ? "bg-white" : "bg-white/0"
                             )}
                         />
@@ -51,9 +59,20 @@ const RoomCard = ({ images, name, description }: RoomCardProps) => {
                 </div>
             </div>
 
-            <div className="p-4">
-                <h3 className="text-xl font-semibold text-primary">{name}</h3>
-                <p className="text-gray-600 mt-2">{description}</p>
+            <div className="flex flex-col items-center">
+                <h3 className="text-xl font-semibold text-light bg-primary w-full h-full text-center p-4">{name}</h3>
+                <Link
+                    to={`/rooms/${name}`}
+                    className="text-primary font-medium p-4 flex items-center justify-between w-full cursor-pointer"
+                >
+                    <div className={"flex gap-2 items-center"}>
+                        <Button
+                            className={"text-2xl !rounded-full !p-2 leading-none h-8 w-8 text-center"}
+                        >+</Button>
+                        <span>Open Room Details</span>
+                    </div>
+                    <span>{description}</span>
+                </Link>
             </div>
         </div>
     );

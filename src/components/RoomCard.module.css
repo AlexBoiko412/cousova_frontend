@@ -3,11 +3,15 @@
 
 @layer utilities {
     .roomCard {
-        @apply bg-white rounded-lg shadow-md overflow-hidden;
+        @apply w-[48%] bg-white rounded-lg overflow-hidden border-[1px] border-gray-300;
     }
 
     .carousel {
-        @apply relative w-full overflow-hidden;
+        @apply h-[40vh] relative overflow-hidden;
+    }
+
+    .carouselImage {
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full w-full object-cover transition-opacity duration-500;
     }
 
     .carouselButton__right {
@@ -25,5 +29,9 @@
 
     .carouselCounter {
         @apply absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2;
+    }
+
+    .carouselCounter__dot {
+        @apply w-4 h-4 rounded-full cursor-pointer transition border-[1px];
     }
 }
