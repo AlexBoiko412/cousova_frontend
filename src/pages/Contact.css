@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer utilities {
+    .contact-title {
+        @apply flex justify-center items-center uppercase text-6xl font-bold text-center bg-primary text-white h-[40vh] p-2;
+    }
+
+    .contact-subtitle {
+        @apply flex justify-center items-center uppercase text-4xl font-bold font-logo text-primary;
+    }
+    .contact-description {
+        @apply flex justify-center items-center text-body font-medium text-primary;
+    }
+
+    .contact-content {
+        @apply flex justify-between;
+    }
+
+
+    .contact-info {
+
+    }
+
+
+    .contact-form {
+
+    }
+}
