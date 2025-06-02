@@ -1,6 +1,7 @@
 import classes from './Button.module.css'
+import type {ButtonHTMLAttributes} from "react";
 
-interface IButtonProps {
+interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children?: React.ReactNode;
     className?: string;
     onClick?: () => void;

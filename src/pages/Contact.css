@@ -18,16 +18,24 @@
     }
 
     .contact-content {
+        @apply flex flex-col pb-[10vh];
+    }
+
+    .contact-usage {
         @apply flex justify-between;
     }
 
-
     .contact-info {
-
+        @apply text-button font-medium text-primary;
     }
 
 
     .contact-form {
+        @apply flex flex-col gap-2 w-[40%];
+    }
+
+    .contact-form label {
+        @apply text-primary font-bold text-body;
 
     }
 }
