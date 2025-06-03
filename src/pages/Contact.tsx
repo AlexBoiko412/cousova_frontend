@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <>
             <section
-                className={"contact-title"}
+                className={"page-title"}
             >
                 CONTACT-US
             </section>

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    .pad {
+        @apply px-main-page-padding;
+    }
+
+    .carousel {
+        @apply h-[70vh] relative overflow-hidden;
+    }
+
+    .carousel-image {
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full w-full object-cover transition-opacity duration-500;
+    }
+
+    .carousel-button__right {
+        @apply absolute h-full w-[20%] flex justify-center items-center top-0 right-0 opacity-0 bg-primary/40 text-light/50 text-9xl transition-opacity;
+    }
+
+    .carousel-button__left {
+        @apply absolute h-full w-[20%] flex justify-center items-center top-0 left-0 opacity-0 bg-primary/40 text-light/50 text-9xl transition-opacity;
+    }
+
+    .carousel-button__right:hover, .carousel-button__left:hover {
+        opacity: 50;
+    }
+
+
+    .carousel-counter {
+        @apply absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2;
+    }
+
+    .carousel-counter__dot {
+        @apply w-4 h-4 rounded-full cursor-pointer transition border-[1px];
+    }
+}

@@ -53,5 +53,10 @@ section {
   .testimonials {
     @apply flex items-center justify-between py-[8vh]
   }
+
+  .page-title {
+    @apply flex justify-center items-center uppercase text-6xl font-bold text-center bg-primary text-white h-[40vh] p-2;
+  }
+
 }
 

@@ -1,0 +1,25 @@
+{
+  "type": {
+    "id": 2,
+    "name": "FAMILY ROOM",
+    "description": "Spacious room for the whole family",
+    "images": [
+      "https://www.amsterdamidaparthotel.com/upload/heading/family-apartment-1600x750.jpg"
+    ]
+  },
+  "rooms": [
+    {
+      "id": 7,
+      "roomTypeId": 2,
+      "number": "301",
+      "bookings": [
+        {
+          "id": 1,
+          "roomId": 7,
+          "checkIn": "2025-07-04",
+          "checkOut": "2025-07-11"
+        }
+      ]
+    }
+  ]
+}
